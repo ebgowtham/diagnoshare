@@ -19,7 +19,7 @@ public class SecurityConfig {
                 // 2. Configure our API access rules
                 .authorizeHttpRequests(auth -> auth
                         // Allow anyone on the internet to hit the register endpoint
-                        .requestMatchers("/api/users/register").permitAll()
+                        .requestMatchers("/api/users/**").permitAll()
                         .requestMatchers("/api/reports/**").permitAll()
                         // Any other request must be logged in
                         .anyRequest().authenticated()
