@@ -1,0 +1,70 @@
+/* 1. Center everything on the screen */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* vh means "Viewport Height". 100vh = 100% of the screen */
+}
+
+/* 2. Style the floating card */
+.login-card {
+  background-color: #1e1e1e; /* Slightly lighter than the black background */
+  padding: 40px;
+  border-radius: 12px; /* Smooth rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* A deep shadow for a 3D pop */
+  width: 350px;
+  text-align: center;
+}
+
+/* 3. Style the text */
+h2 { margin-bottom: 5px; }
+p { color: #aaaaaa; margin-bottom: 30px; font-size: 14px; }
+
+/* 4. Style the input boxes */
+.input-group {
+  text-align: left; /* Keep labels on the left */
+  margin-bottom: 20px;
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #cccccc;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #333;
+    background-color: #121212; /* Very dark input background */
+    color: white; /* White text when typing */
+    border-radius: 6px;
+    box-sizing: border-box; /* Keeps the padding from breaking the width */
+    outline: none;
+
+    /* When the user clicks inside the box to type... */
+    &:focus {
+      border-color: var(--hospital-blue); /* ...glow blue! */
+    }
+  }
+}
+
+/* 5. Style the Login Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  /* A sleek blue gradient using the colors from styles.scss */
+  background: linear-gradient(90deg, var(--hospital-blue), var(--hospital-dark-blue));
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s; /* Prepare for a smooth animation */
+
+  /* When the user hovers their mouse over the button... */
+  &:hover {
+    transform: scale(1.03); /* ...make it pop out slightly! */
+  }
+}

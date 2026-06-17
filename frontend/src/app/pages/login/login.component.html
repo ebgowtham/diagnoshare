@@ -1,0 +1,22 @@
+<div class="login-container">
+
+  <div class="login-card">
+
+    <h2>Hospital Portal</h2>
+    <p>Sign in to DiagnoShare</p>
+
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" placeholder="doctor@hospital.com" [(ngModel)]="userEmail">
+    </div>
+
+    <div class="input-group">
+      <label>Password</label>
+      <input type="password" placeholder="••••••••" [(ngModel)]="userPassword">
+    </div>
+
+    <button class="login-btn" (click)="onLogin()">Secure Login</button>
+
+  </div>
+
+</div>
