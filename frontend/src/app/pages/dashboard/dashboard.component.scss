@@ -1,0 +1,103 @@
+.dashboard-container {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+
+  h1 { margin: 0; color: #fff; }
+  .status-green { color: #00ff88; font-family: monospace; }
+}
+
+.data-card {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-left: 4px solid var(--hospital-blue);
+
+  h2 { margin-top: 0; color: #ccc; font-size: 18px; }
+  hr { border-color: #333; margin-bottom: 20px; }
+}
+
+.json-display {
+  background-color: #0d0d0d;
+  color: #4facfe;
+  padding: 15px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  overflow-x: auto;
+}
+
+.error-box { color: #ff4c4c; border: 1px solid #ff4c4c; padding: 15px; }
+.loading-box { color: #888; font-style: italic; }
+/* Header layout to put the title and logout button on the same line */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    margin: 0;
+  }
+}
+
+/* The Logout Button */
+.logout-btn {
+  background-color: transparent;
+  color: #ff4c4c;
+  border: 1px solid #ff4c4c;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #ff4c4c;
+    color: #1e1e1e;
+  }
+}
+
+/* The Enterprise Data Table */
+.medical-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #121212;
+  border-radius: 6px;
+  overflow: hidden;
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+  }
+
+  th {
+    background-color: #1a1a1a;
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  td {
+    color: #e0e0e0;
+    font-size: 15px;
+  }
+
+  .highlight {
+    color: var(--hospital-blue);
+    font-weight: bold;
+  }
+
+  /* Highlight the row when the mouse hovers over it */
+  tbody tr:hover {
+    background-color: #1a1a1a;
+  }
+}
