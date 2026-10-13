@@ -1,17 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
-/* Reset the default browser margins */
+
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-  /* Our sleek dark theme background */
   background-color: #121212;
   color: #ffffff;
 }
 
-/* A clean accent color we can use later for buttons */
 :root {
   --hospital-blue: #4facfe;
   --hospital-dark-blue: #00f2fe;

@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2ab9ddc6-e0e2-4cc1-a33f-d84c7a7a0cb7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Controller/ReportController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Controller/ReportController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/DiagnoShare/Security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/login/login.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,27 +51,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.DiagnoShare [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.DiagnoShareApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/DiagnoShare/DiagnoShare",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.DiagnoShare [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DiagnoShareApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/DiagnoShare/DiagnoShare&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\DiagnoShare\DiagnoShare\backend" />
@@ -90,7 +100,35 @@
       <workItem from="1781601547006" duration="8747000" />
       <workItem from="1781610416149" duration="406000" />
       <workItem from="1781611419660" duration="386000" />
-      <workItem from="1781693256657" duration="8106000" />
+      <workItem from="1781693256657" duration="8771000" />
+      <workItem from="1781781863657" duration="6016000" />
+      <workItem from="1781873424852" duration="223000" />
+      <workItem from="1781963712691" duration="7000" />
+      <workItem from="1782739565685" duration="666000" />
+      <workItem from="1782964606809" duration="13000" />
+      <workItem from="1783077561878" duration="22000" />
+      <workItem from="1783250624625" duration="17000" />
+      <workItem from="1783250672397" duration="106000" />
+      <workItem from="1783699942400" duration="1231000" />
+      <workItem from="1783771392864" duration="552000" />
+      <workItem from="1783774204582" duration="9000" />
+      <workItem from="1784032730038" duration="330000" />
+      <workItem from="1784033558899" duration="3000" />
+      <workItem from="1784033943245" duration="17000" />
+      <workItem from="1785576338270" duration="287000" />
+      <workItem from="1785596036043" duration="1074000" />
+      <workItem from="1785657556670" duration="1315000" />
+      <workItem from="1785659559606" duration="2036000" />
+      <workItem from="1785720876637" duration="476000" />
+      <workItem from="1785731852368" duration="127000" />
+      <workItem from="1785817606289" duration="232000" />
+      <workItem from="1786153247388" duration="217000" />
+      <workItem from="1786191738798" duration="98000" />
+      <workItem from="1786331612163" duration="1000" />
+      <workItem from="1786331620601" duration="237000" />
+      <workItem from="1786439394352" duration="401000" />
+      <workItem from="1787370996876" duration="601000" />
+      <workItem from="1787374529997" duration="18000" />
     </task>
     <servers />
   </component>

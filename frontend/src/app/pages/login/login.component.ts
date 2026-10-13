@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '../../services/auth.service'; // 1. Import the Driver
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -14,28 +15,31 @@ export class LoginComponent {
   userEmail = '';
   userPassword = '';
 
-  // 2. Hire the driver by putting them in the constructor
-  constructor(private authService: AuthService) {}
+
+  constructor(private authService: AuthService,private router: Router) { }
 
   onLogin() {
     console.log("Sending credentials to the backend...");
 
-    // 3. Hand the data to the driver and 'subscribe' (wait for the package to arrive)
+
     this.authService.login(this.userEmail, this.userPassword).subscribe({
 
-      // 4. If Spring Boot says "200 OK" and gives us the token:
-      next: (token) => {
-        console.log("Success! The Guard gave us the Keycard:", token);
 
-        // Save the token inside the browser's permanent memory (localStorage)
-        localStorage.setItem('jwt_token', token);
+      next: (response) => {
+        console.log("Spring Boot sent us this response object:", response);
 
-        alert("Login Successful! Check your console.");
+        const cleanToken = response.token;
+
+        if (cleanToken) {
+          localStorage.setItem('jwt_token', cleanToken);
+          this.router.navigate(['/dashboard']);
+        } else {
+          alert("Login worked, but Angular couldn't find the token in the response! Check the console.");
+        }
       },
 
-      // 5. If Spring Boot says "401 Unauthorized" (wrong password) or "403 Forbidden":
+
       error: (error) => {
-        console.error("Login Failed. Spring Boot blocked us:", error);
         alert("Invalid email or password!");
       }
     });

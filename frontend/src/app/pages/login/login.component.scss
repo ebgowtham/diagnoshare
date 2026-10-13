@@ -1,28 +1,27 @@
-/* 1. Center everything on the screen */
+
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* vh means "Viewport Height". 100vh = 100% of the screen */
+  height: 100vh;
 }
 
-/* 2. Style the floating card */
+
 .login-card {
-  background-color: #1e1e1e; /* Slightly lighter than the black background */
+  background-color: #1e1e1e;
   padding: 40px;
-  border-radius: 12px; /* Smooth rounded corners */
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* A deep shadow for a 3D pop */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   width: 350px;
   text-align: center;
 }
 
-/* 3. Style the text */
 h2 { margin-bottom: 5px; }
 p { color: #aaaaaa; margin-bottom: 30px; font-size: 14px; }
 
-/* 4. Style the input boxes */
+
 .input-group {
-  text-align: left; /* Keep labels on the left */
+  text-align: left;
   margin-bottom: 20px;
 
   label {
@@ -36,24 +35,24 @@ p { color: #aaaaaa; margin-bottom: 30px; font-size: 14px; }
     width: 100%;
     padding: 12px;
     border: 1px solid #333;
-    background-color: #121212; /* Very dark input background */
-    color: white; /* White text when typing */
+    background-color: #121212;
+    color: white;
     border-radius: 6px;
-    box-sizing: border-box; /* Keeps the padding from breaking the width */
+    box-sizing: border-box;
     outline: none;
 
-    /* When the user clicks inside the box to type... */
+
     &:focus {
-      border-color: var(--hospital-blue); /* ...glow blue! */
+      border-color: var(--hospital-blue);
     }
   }
 }
 
-/* 5. Style the Login Button */
+
 .login-btn {
   width: 100%;
   padding: 12px;
-  /* A sleek blue gradient using the colors from styles.scss */
+
   background: linear-gradient(90deg, var(--hospital-blue), var(--hospital-dark-blue));
   color: black;
   border: none;
@@ -61,10 +60,9 @@ p { color: #aaaaaa; margin-bottom: 30px; font-size: 14px; }
   font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
-  transition: transform 0.2s; /* Prepare for a smooth animation */
+  transition: transform 0.2s;
 
-  /* When the user hovers their mouse over the button... */
   &:hover {
-    transform: scale(1.03); /* ...make it pop out slightly! */
+    transform: scale(1.03);
   }
 }

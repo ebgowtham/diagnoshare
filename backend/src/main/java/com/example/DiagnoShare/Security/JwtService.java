@@ -31,7 +31,6 @@ public class JwtService {
         return (tokenEmail.equals(email) && !isTokenExpired(token));
     }
 
-    //BoilerPlate Math Code
     private boolean isTokenExpired(String token) {
         return extractClaim(token, Claims::getExpiration).before(new Date());
     }
